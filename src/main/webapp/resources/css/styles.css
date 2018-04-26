@@ -1,0 +1,232 @@
+@CHARSET "UTF-8";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: Roboto;
+	font-size: 14px;
+}
+
+#body-login {
+	background-color: #00909C;
+}
+
+/* start css page đăng nhập */
+#body-flex-login {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#container-login {
+	display: flex;
+	width: 820px;
+	height: 610px;
+	background-color: white;
+}
+
+#container-login-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 380px;
+	height: 610px;
+	background-image: url(../img/background-dangnhap.jpg);
+	padding: 0 16px;
+}
+
+#container-login-right {
+	padding: 0 24px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	flex: 1;
+}
+
+#container-soial-login {
+	align-self: flex-end;
+	margin-bottom: 16px;
+}
+
+#header-top-right {
+	font-size: 20px;
+	color: #B7B7B7;
+}
+
+#header-top-left {
+	text-align: center;
+}
+
+.header-login {
+	margin-top: 32px;
+}
+
+#container-center-login-right input[type=text] {
+	margin-top: 8px;
+	font-size: 14px;
+}
+
+#container-center-login-right input[type=password] {
+	margin-top: 8px;
+	font-size: 14px;
+}
+
+#container-center-login-right input[type=submit] {
+	margin-top: 24px;
+	color: white;
+	font-size: 14px;
+}
+
+.meterial-textinput {
+	height: 38px;
+	border: 0;
+	width: 100%;
+	background-color: #D8D8D8;
+}
+
+.input-icon-email {
+	background: url(../img/gmail.png) no-repeat scroll 16px 7px;
+	background-color: #D8D8D8;
+	height: 38px;
+	width: 88%;
+	border: 0;
+	padding-left: 42px;
+}
+
+.input-icon-password {
+	background: url(../img/locked.png) no-repeat scroll 16px 7px;
+	background-color: #D8D8D8;
+	height: 38px;
+	width: 88%;
+	border: 0;
+	padding-left: 42px;
+}
+
+.meterial-primary-button {
+	height: 38px;
+	border: 0;
+	background-color: #00909C;
+	width: 100%;
+	box-shadow: 0px 2px 4px 0px #000;
+}
+
+#text-logo {
+	color: white;
+	font-size: 48px;
+}
+
+#hind-text-logo {
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+#header-bottom-left span {
+	color: white;
+	margin-left: 8px;
+}
+
+#header-bottom-left {
+	margin-bottom: 64px;
+}
+
+.actived {
+	color: #DA7C79;
+}
+
+/* end css page đăng nhập */
+
+/* css trang chu */
+
+body a{
+	font-family: "Roboto" !important;
+}
+
+#header {
+	height: 750px;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.42),
+      rgba(0, 0, 0, 0.42)
+      )
+	,url(../img/background-trangchu.jpg) no-repeat center center
+		fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.none_nav{
+	background: none !important;
+	border: none !important;
+}
+.navbar-center{
+	margin-left: 25% !important;
+}
+
+.navbar-nav a{
+	color: white !important;
+}
+
+.active > a{
+	color: pink !important;
+	background: none !important;
+	font-weight: bold;
+}
+
+.dropdown-menu{
+	background-color: pink !important;
+}
+
+.even_header{
+	text-align: center;
+	margin-top: 216px;
+}
+.even_header >span{
+	color: white;
+}
+.even_header >button{
+	color: white;
+	background-color: #39FFE1;
+}
+
+.icon{
+	width: 48px;
+}
+
+#info{
+	text-align: center;
+	margin-top: 48px;
+}
+
+#info >span{
+	margin-top: 16px;
+}
+
+#title-sanpham{
+	margin-top: 100px;
+	text-align:  center;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.list-sanpham{
+	margin-top: 42px;
+}
+
+.list-sanpham img{
+	height: 300px;
+}
+
+#footer{
+	text-align: center;
+	margin-top: 45px;
+	color: white;
+	background-color: black;
+	padding: 38px;
+}
+
+.title-footer{
+	font-size: 32px;
+}
+/* end css trang chu */
