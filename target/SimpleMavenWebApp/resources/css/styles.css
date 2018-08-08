@@ -62,6 +62,10 @@ html, body {
 	margin-top: 32px;
 }
 
+.header-login a:hover{
+	color: #ffffff;
+}
+
 #container-center-login-right input[type=text] {
 	margin-top: 8px;
 	font-size: 14px;
@@ -107,8 +111,8 @@ html, body {
 	height: 38px;
 	border: 0;
 	background-color: #00909C;
-	width: 100%;
 	box-shadow: 0px 2px 4px 0px #000;
+	width: 88%;
 }
 
 #text-logo {
@@ -156,12 +160,21 @@ body a{
 	background-size: cover;
 }
 
+#header-chitiet{
+	background-color: black;
+	height: 120px;
+}
+
 .none_nav{
 	background: none !important;
 	border: none !important;
 }
 .navbar-center{
-	margin-left: 25% !important;
+	margin-left: 10% !important;
+}
+
+.nav-item {
+	margin-left: 50px !important;
 }
 
 .navbar-nav a{
@@ -229,4 +242,35 @@ body a{
 .title-footer{
 	font-size: 32px;
 }
+
+#icon-user{
+	padding: 7px;
+	height: 32px;
+	width: 32px;
+	background-color: brown;
+	border-radius: 16px;
+	text-align: center;
+}
+
 /* end css trang chu */
+
+/* chi tiet*/
+
+#header-chitiet{
+	background-color: black;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.mymenu {
+	padding: 0px;
+	margin: 0px;
+}
+
+.mymenu li{
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px 0px;
+}

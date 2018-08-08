@@ -4,6 +4,7 @@
 <script src='< c:url value="resources/js/jquery.min.js"/>'></script>
 <script src='< c:url value="resources/bootstrap-4.1.0-dist/js/bootstrap.min.js"/>'></script>
 <script src='< c:url value="resources/js/wow.min.js"/>'></script>
+<script src='< c:url value="resources/js/custom.js"/>'></script>
 <script>
     new WOW().init();
 </script>

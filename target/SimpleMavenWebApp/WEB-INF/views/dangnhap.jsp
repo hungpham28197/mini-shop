@@ -6,11 +6,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="resources/css/styles.css">
+<jsp:include page="header.jsp" />
 <title>Insert title here</title>
 </head>
 <body id="body-login">
-
+	<div style="width: 200px; float: right; margin:5px;">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="${pageContext.request.contextPath}">Trang chủ</a></li>
+			<li class="breadcrumb-item active">Đăng nhập</li>
+		</ol>	
+	</div>
 	<div id="body-flex-login">
 		<div id="container-login">
 			<div id="container-login-left">
@@ -27,14 +32,14 @@
 
 			<div id="container-login-right">
 				<div id="header-top-right" class="header-login">
-					<span class="actived">Đăng nhập</span> / <span>Đăng ký</span>
+					<a href="/minishop/dangnhap"><span class ="actived" id="dangnhap">Đăng nhập</span></a> / <a href="/minishop/dangky"><span style="color: #D8D8D8" id="dangky">Đăng ký</span></a>
 				</div>
+				
 				<div id="container-center-login-right">
-					<form action="dangnhap" method="post">
-						<input class="meterial-textinput input-icon-email" type="text" placeholder="Email" name="tendangnhap"/><br/>
-						<input class="meterial-textinput input-icon-password" type="password" placeholder="Mật khẩu" name="matkhau"/><br/>
-						<input class="meterial-primary-button" type="submit" value="Đăng nhập"/><br/>
-					</form>
+						<span id="ketqua" style="color: red">${errorLogin}</span></br>
+						<input id="email" class="meterial-textinput input-icon-email" type="text" placeholder="Email" name="tendangnhap"/><br/>
+						<input id="matkhau" class="meterial-textinput input-icon-password" type="password" placeholder="Mật khẩu" name="matkhau"/><br/>
+						<input id = "btnDangNhap" class="meterial-primary-button" type="submit" value="Đăng nhập"/><br/>
 				</div>
 				<div id="container-soial-login">
 					<img alt="icon_oval" src='< c:url value="resources/img/facebook_circle.png"/>' />
@@ -42,6 +47,10 @@
 				</div>
 			</div>
 		</div>
+		
 	</div>
+	
+	
+	<jsp:include page="footer.jsp" />
 </body>
 </html>
